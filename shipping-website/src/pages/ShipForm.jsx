@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../components/styles/components.css';
+import '../components/styles/components_1.css';
 
 const ShipForm = () => {
     const [formData, setFormData] = useState({
@@ -16,7 +16,8 @@ const ShipForm = () => {
     const calculatePrice = () => {
         const type = formData.packageType.toLowerCase();
         if (type === 'laptop') return 50;
-        if (type === 'phone') return 25;
+        if (type === 'Iphone') return 30;
+        if (type === 'Android') return 20;
         return formData.weight * 12;
     };
 
